@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts">
-import LoginTemplate from '~/components/template/Login.vue'
+import LoginTemplate from '~/components/template/LogIn.vue'
 import { defineComponent } from '@nuxtjs/composition-api'
 export default defineComponent ({
   layout: 'login',
