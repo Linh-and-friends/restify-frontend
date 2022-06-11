@@ -1,43 +1,44 @@
 {
-  "compilerOptions": {
-    "target": "ES2018",
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "lib": [
-      "ESNext",
-      "ESNext.AsyncIterable",
-      "DOM",
-      "DOM.Iterable",
-    ],
-    "esModuleInterop": true,
-    "allowJs": true,
-    "sourceMap": true,
-    "strict": true,
-    "noEmit": true,
-    "experimentalDecorators": true,
-    "resolveJsonModule": true,
-    "baseUrl": ".",
-    "paths": {
-      "~/*": [
-        "./*"
+    "compilerOptions": {
+      "target": "ES2018",
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "lib": [
+        "ESNext",
+        "ESNext.AsyncIterable",
+        "DOM",
+        "DOM.Iterable",
       ],
-      "@/*": [
-        "./*"
-      ]
+      "esModuleInterop": true,
+      "allowJs": true,
+      "sourceMap": true,
+      "strict": true,
+      "noEmit": true,
+      "experimentalDecorators": true,
+      "resolveJsonModule": true,
+      "baseUrl": ".",
+      "paths": {
+        "~/*": [
+          "./*"
+        ],
+        "@/*": [
+          "./*"
+        ]
+      },
+      "types": [
+        "@nuxt/types",
+        "@nuxtjs/axios",
+        "@types/node",
+      ],
+      "typeRoots": [
+        "./node_modules",
+      ],
+      "jsx": "react",
     },
-    "types": [
-      "@nuxt/types",
-      "@nuxtjs/axios",
-      "@types/node",
-    ],
-    "typeRoots": [
-      "./node_modules",
-    ],
-    "jsx": "react",
-  },
-  "exclude": [
-    "node_modules",
-    ".nuxt",
-    "dist"
-  ]
-}
+    "exclude": [
+      "node_modules",
+      ".nuxt",
+      "dist"
+    ]
+  }
+  
