@@ -1,5 +1,7 @@
 <template>
-  <login-template class="login" />
+  <div :class="$style.login">
+    <login-template />
+  </div>
 </template>
 
 <script lang="ts">
@@ -13,7 +15,7 @@ export default defineComponent ({
 })
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" module>
   .login {
     width: 100vw;
     height: 100vh;

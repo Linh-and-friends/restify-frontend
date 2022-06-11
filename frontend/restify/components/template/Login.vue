@@ -21,8 +21,8 @@
           <a href="">Forgot password?</a>
         </div>
         <div class="button">
-            <button class="btn login-btn">LOG IN</button>
-            <button class="btn signup-btn">SIGN UP</button>
+            <button-component text="LOG IN"></button-component>
+            <button-component text="SIGN UP" color="yellow"></button-component>
         </div>
       </div>
     </div>
@@ -31,10 +31,12 @@
 
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api'
-
+import ButtonComponent from '~/components/atom/Button.vue'
 export default defineComponent ({
   name: 'LoginTemplate',
-  
+  components: {
+    ButtonComponent
+  }
 })
 </script>
 
@@ -135,8 +137,8 @@ a {
 }
 
 .signup-btn {
-  background-color: #d68113;
-  background: linear-gradient(#d68113 0%, #c6750b 100%);
+  background-color: #1c9a13;
+  //background: linear-gradient(#d68113 0%, #c6750b 100%);
 }
 .img {
   width: 55%;
