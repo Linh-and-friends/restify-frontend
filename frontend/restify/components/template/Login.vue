@@ -1,28 +1,28 @@
 <template>
   <div class="login">
-    <div className="login-section">
-      <div class-name="login-section-container">
+    <div class="login-section">
+      <div class="login-section-container">
         <h1>Welcome</h1>
         <ul>
           <li>
-            <div class-name="label">Restaurant Name</div>
+            <div class="label">Restaurant Name</div>
             <input type="text" placeholder="Your restaurant name">
           </li>
           <li>
-            <div class-name="label">ID</div>
+            <div class="label">ID</div>
             <input type="text" placeholder="Your email">
           </li>
           <li>
-            <div class-name="label">Password</div>
+            <div class="label">Password</div>
             <input type="text" placeholder="Your password">
           </li>
         </ul>
-        <div class-name="forgot-pass">
+        <div class="forgot-pass">
           <a href="">Forgot password?</a>
         </div>
-        <div class-name="button">
-            <button class-name="btn login-btn">LOG IN</button>
-            <button class-name="btn signup-btn">SIGN UP</button>
+        <div class="button">
+            <button class="btn login-btn">LOG IN</button>
+            <button class="btn signup-btn">SIGN UP</button>
         </div>
       </div>
     </div>
