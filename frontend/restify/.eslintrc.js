@@ -7,5 +7,6 @@ module.exports = {
   extends: ['@nuxtjs/eslint-config-typescript', 'plugin:nuxt/recommended', 'plugin:storybook/recommended'],
   plugins: [],
   // add your custom rules here
-  rules: {}
+  rules: {
+  }
 };
