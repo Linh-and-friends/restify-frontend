@@ -1,4 +1,5 @@
 {
     "typescript.tsdk": "node_modules/typescript/lib",
-    "json.maxItemsComputed": 500000
+    "json.maxItemsComputed": 500000,
+    "editor.foldingMaximumRegions": 50000
 }
