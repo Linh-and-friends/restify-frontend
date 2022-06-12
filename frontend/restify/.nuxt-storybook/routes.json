@@ -1,0 +1,14 @@
+[
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "/Users/Crowniizuma/Documents/restify/frontend/restify/pages/login.vue",
+    "chunkName": "pages/login"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/Crowniizuma/Documents/restify/frontend/restify/pages/index.vue",
+    "chunkName": "pages/index"
+  }
+]

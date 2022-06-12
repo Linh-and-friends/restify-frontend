@@ -14,14 +14,8 @@ const Template = (args) => ({
   });
 
 
-export const yellow = Template.bind({});
-yellow.args = {
-    text: 'yellow',
+export const Default = Template.bind({});
+Default.args = {
+    text: 'default',
     color: 'yellow',
-}
-
-export const green = Template.bind({});
-green.args = {
-    text: 'green',
-    color: 'green',
 }
