@@ -1,12 +1,12 @@
-import InputText from './InputText.vue'
+import AtomInputText from './AtomInputText.vue'
 
 export default {
-    component: InputText,
-    title: 'Atom/InputText',
+    component: AtomInputText,
+    title: 'Atom/AtomInputText',
 }
 
 const Template = (args) => ({
-    components: { InputText },
+    components: { AtomInputText },
     setup() {
         return { args };
     },

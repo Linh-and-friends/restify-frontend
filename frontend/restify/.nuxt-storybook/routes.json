@@ -3,12 +3,14 @@
     "name": "login",
     "path": "/login",
     "component": "/Users/Crowniizuma/Documents/restify/frontend/restify/pages/login.vue",
-    "chunkName": "pages/login"
+    "chunkName": "pages/login",
+    "_name": "_56de9f4e"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/Crowniizuma/Documents/restify/frontend/restify/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_0ae90d42"
   }
 ]

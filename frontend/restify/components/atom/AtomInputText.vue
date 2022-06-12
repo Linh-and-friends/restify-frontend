@@ -1,5 +1,5 @@
 <template>
-  <input class="rounded-3xl shadow-md" type="text" :placeholder="placeholderText" @input="handleInput" />
+  <input class="rounded-3xl shadow-md pl-5 border border-gray-100" :value="value" type="text" :placeholder="placeholderText" @input="handleInput" />
 </template>
 
 <script lang="ts">
@@ -8,10 +8,11 @@
   export type Props = {
     placeholderText: String;
     key: String;
+    value: String;
   }
 
   export default defineComponent ({
-    name: 'InputText',
+    name: 'AtomInputText',
     props: {
         placeholderText: {
           type: String as PropType<Props["placeholderText"]>,
@@ -21,6 +22,10 @@
         type: String as PropType<Props["key"]>,
         required: false,
         default: "",
+        },
+        value: {
+          type: String as PropType<Props["value"]>,
+          required: true,
         },
     },
     setup(props,context){
@@ -32,9 +37,3 @@
   
 </script>
 
-<style lang="scss" module>
-  input {
-    padding-left: calc((20 / 1366) * 100vw);
-    border: 1px solid rgba(125, 125, 125, 0.5);
-  }
-</style>

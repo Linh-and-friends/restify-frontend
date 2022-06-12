@@ -32,7 +32,7 @@
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api'
 import ButtonComponent from '~/components/atom/Button.vue'
-import InputText from '~/components/atom/InputText.vue'
+import InputText from '~/components/atom/AtomInputText.vue'
 export default defineComponent ({
   name: 'LoginTemplate',
   components: {
@@ -102,10 +102,6 @@ ul {
 input {
   width: calc((400 / 1366) * 100vw);
   height: calc((50 / 1366) * 100vw);
-  border-radius: calc((20 / 1366) * 100vw);
-  padding-left: calc((20 / 1366) * 100vw);
-  border: 1px solid rgba(125, 125, 125, 0.5);
-  box-shadow: 3px 5px 8px rgba(202, 202, 202, 0.5);
 }
 
 .forgot-pass {
@@ -123,25 +119,7 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.btn {
-  cursor: pointer;
-  width: calc((180 / 400) * 100%);
-  border-radius: calc((20 / 1366) * 100vw);
-  font-size: calc((20 / 1366) * 100vw);
-  font-weight: bold;
-  color: #ffffff;
-  border-color: transparent;
-  padding: calc((10 / 1366) * 100vw);
-}
 
-.login-btn {
-  background: linear-gradient(#1c9a13 0%, #287622 100%);
-}
-
-.signup-btn {
-  background-color: #1c9a13;
-  //background: linear-gradient(#d68113 0%, #c6750b 100%);
-}
 .img {
   width: 55%;
   height: 100%;

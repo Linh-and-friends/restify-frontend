@@ -1,5 +1,5 @@
 <template>
-  <button :class="[$style.btn, $style[color]]" @click="handleClick">{{text}}</button>
+  <button class="rounded-3xl text-xl font-bold text-white border-transparent p-2.5" :class="[$style.btn, $style[color]]" @click="handleClick">{{text}}</button>
 </template>
 
 <script lang="ts">
@@ -44,12 +44,6 @@
   .btn {
     cursor: pointer;
     width: calc((180 / 400) * 100%);
-    border-radius: calc((20 / 1366) * 100vw);
-    font-size: calc((20 / 1366) * 100vw);
-    font-weight: bold;
-    color: #ffffff;
-    border-color: transparent;
-    padding: calc((10 / 1366) * 100vw);
   }
   .yellow {
     background: linear-gradient(#d68113 0%, #c6750b 100%);

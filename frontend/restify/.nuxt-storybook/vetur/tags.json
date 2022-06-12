@@ -5,13 +5,16 @@
   "Tutorial": {
     "description": "Auto imported from components/Tutorial.vue"
   },
+  "AtomInputText": {
+    "description": "Auto imported from components/atom/AtomInputText.vue"
+  },
   "AtomButton": {
     "description": "Auto imported from components/atom/Button.vue"
   },
-  "AtomInputText": {
-    "description": "Auto imported from components/atom/InputText.vue"
-  },
   "TemplateLogIn": {
     "description": "Auto imported from components/template/LogIn.vue"
+  },
+  "MoleculeInputText": {
+    "description": "Auto imported from components/molecule/InputText.vue"
   }
 }
