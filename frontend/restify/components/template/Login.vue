@@ -6,15 +6,15 @@
         <ul>
           <li>
             <div class="label">Restaurant Name</div>
-            <input type="text" placeholder="Your restaurant name">
+            <input-text placeholder-text="Your restaurant name" />
           </li>
           <li>
             <div class="label">ID</div>
-            <input type="text" placeholder="Your email">
+            <input-text placeholder-text="Your email" />
           </li>
           <li>
             <div class="label">Password</div>
-            <input type="text" placeholder="Your password">
+            <input-text placeholder-text="Your password" />
           </li>
         </ul>
         <div class="forgot-pass">
@@ -32,10 +32,12 @@
 <script lang="ts">
 import { defineComponent } from '@nuxtjs/composition-api'
 import ButtonComponent from '~/components/atom/Button.vue'
+import InputText from '~/components/atom/InputText.vue'
 export default defineComponent ({
   name: 'LoginTemplate',
   components: {
-    ButtonComponent
+    ButtonComponent,
+    InputText
   }
 })
 </script>

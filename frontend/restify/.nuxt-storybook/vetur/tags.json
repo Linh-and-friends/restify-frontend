@@ -8,6 +8,9 @@
   "AtomButton": {
     "description": "Auto imported from components/atom/Button.vue"
   },
+  "AtomInputText": {
+    "description": "Auto imported from components/atom/InputText.vue"
+  },
   "TemplateLogIn": {
     "description": "Auto imported from components/template/LogIn.vue"
   }

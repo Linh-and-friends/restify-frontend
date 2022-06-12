@@ -1,5 +1,6 @@
 {
     "typescript.tsdk": "node_modules/typescript/lib",
     "json.maxItemsComputed": 500000,
-    "editor.foldingMaximumRegions": 50000
+    "editor.foldingMaximumRegions": 50000,
+    "editor.tabSize": 2
 }

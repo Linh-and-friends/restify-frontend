@@ -9,4 +9,5 @@ You can directly use them in pages and other components without the need to impo
 - `<NuxtLogo>` | `<nuxt-logo>` (components/NuxtLogo.vue)
 - `<Tutorial>` | `<tutorial>` (components/Tutorial.vue)
 - `<AtomButton>` | `<atom-button>` (components/atom/Button.vue)
+- `<AtomInputText>` | `<atom-input-text>` (components/atom/InputText.vue)
 - `<TemplateLogIn>` | `<template-log-in>` (components/template/LogIn.vue)
