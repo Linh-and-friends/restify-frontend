@@ -1,14 +1,14 @@
 // .eslintrc.cjs
 
 module.exports = {
-  root: true,
-  parser: "vue-eslint-parser",
-  parserOptions: {
-    parser: "@typescript-eslint/parser",
-  },
-  extends: ["@nuxtjs/eslint-config-typescript", "plugin:prettier/recommended"],
-  rules: {
-    indent: ["error", 2],
-  },
-  // ...
+	root: true,
+	parser: "vue-eslint-parser",
+	parserOptions: {
+		parser: "@typescript-eslint/parser",
+	},
+	extends: ["@nuxtjs/eslint-config-typescript", "plugin:prettier/recommended"],
+	rules: {
+		indent: ["error", 2],
+	},
+	// ...
 };
