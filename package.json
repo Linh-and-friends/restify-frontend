@@ -24,8 +24,12 @@
 		"typescript": "^5.0.4"
 	},
 	"dependencies": {
+		"@ant-design/icons-vue": "^6.1.0",
 		"@pinia/nuxt": "^0.4.9",
+		"ant-design-vue": "^3.2.20",
 		"pinia": "^2.0.35",
+		"unplugin-vue-components": "^0.24.1",
+		"vue-i18n": "^9.2.2",
 		"yarn": "^1.22.19"
 	},
 	"overrides": {
