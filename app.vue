@@ -1,8 +1,8 @@
 <template>
 	<div>
 		<NuxtWelcome />
-		<a-button @click="handleLogIn">Log In</a-button>
-		<a-button @click="handleLogOut">Log Out</a-button>
+		<a-button @click="handleLogIn">{{ $t('login') }}</a-button>
+		<a-button @click="handleLogOut">{{ $t('logout') }}</a-button>
 	</div>
 </template>
 
@@ -10,7 +10,7 @@
 	import { useUserStore } from './stores/user';
 	const userStore = useUserStore();
 	const handleLogIn = () => {
-		userStore.logIn();
+		userStore.logIn('dummy@gmail.com','ha1234');
 	}
 	const handleLogOut = () => {
 		userStore.logOut();

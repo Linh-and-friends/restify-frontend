@@ -29,6 +29,7 @@
 		"@pinia/nuxt": "^0.4.9",
 		"@vueuse/core": "^10.1.2",
 		"ant-design-vue": "^3.2.20",
+		"firebase": "^9.21.0",
 		"pinia": "^2.0.35",
 		"unplugin-vue-components": "^0.24.1",
 		"vue-i18n": "^9.2.2",
