@@ -1,5 +1,5 @@
 <template>
-  <input type="button" :value="value" class="confirm-button"/>
+  <input type="button" :value="$t(value)" class="confirm-button"/>
 </template>
 
 <script setup lang="ts">

@@ -1,9 +1,8 @@
 <template>
-  <a-input class="input" v-model:value="value" :placeholder="placeholder" />
+  <a-input class="input" :value="value" :placeholder="placeholder" @input="handleInput"/>
 </template>
 <script setup lang="ts">
-import { ref } from 'vue';
-const value = ref('');
+
 const props = defineProps({
   value: {
     type: String,
@@ -16,17 +15,19 @@ const props = defineProps({
     default: ''
   },
 });
+
+//emit event input
+const emit = defineEmits<{
+  (e: 'input', value: string): void
+}>();
+
+const handleInput = (e: Event): void => {
+  emit('input', (e.target as HTMLInputElement).value)
+}
 </script>
 
-<style module lang="scss">
+<style scoped lang="scss">
 .input {
   border-radius: 5px;
-  width: 100px;
-  height: 40px;
-}
-.input::placeholder {
-  font-size: 14px;
-  padding-left: 10px;
-  color: $gray;
 }
 </style>

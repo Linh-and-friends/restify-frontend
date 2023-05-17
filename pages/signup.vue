@@ -1,27 +1,25 @@
 <template>
-  <div class="login-container">
+  <div class="signup-container">
     <AtomPageTitle title="Welcome to Restify"></AtomPageTitle>
-    <AtomSubPageTitle title="Log In"></AtomSubPageTitle>
+    <AtomSubPageTitle title="Sign Up"></AtomSubPageTitle>
     <div class="info">
       <MoleculeInputSet :value="state.email" title="Email" placeholder="Email" @input="setEmail"></MoleculeInputSet>
       <MoleculeInputPasswordSet :value="state.password" title="Password" placeholder="Password" @input="setPassword"></MoleculeInputPasswordSet>
+      <MoleculeInputPasswordSet :value="state.confirmedPassword" title="Confirm password" placeholder="Password" @input="setConfirmedPassword"></MoleculeInputPasswordSet>
     </div>
-    <div class="forgot-password">
-      <AtomLink url="" title="Forgot password?"></AtomLink>
-    </div>
-    <AtomConfirmButton class="orange-button" value="Log in" @click="handleLogIn"></AtomConfirmButton>
-    <div class="sign-up-msg">
-      <p>Don't have an account?</p>
-      <AtomLink url="" title="Sign up"></AtomLink>
+    <AtomConfirmButton class="orange-button" value="Sign up" ></AtomConfirmButton>
+    <div class="log-in-msg">
+      <p>Already have an account?</p>
+      <AtomLink url="/login" title="Log in"></AtomLink>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-
 const state = reactive({
-  email:'',
-  password: ''
+  email: '',
+  password: '',
+  confirmedPassword: ''
 })
 
 const setEmail = (value: string) => {
@@ -32,17 +30,13 @@ const setPassword = (value: string) => {
   state.password = value;
 }
 
-import { useUserStore } from '~/stores/user';
-const userStore = useUserStore();
-const handleLogIn = () => {
-  console.log("email", state.email);
-  console.log("password", state.password);
-  userStore.logIn(state.email, state.password);
+const setConfirmedPassword = (value: string) => {
+  state.confirmedPassword = value;
 }
 </script>
 
 <style scoped lang="scss">
-.login-container {
+.signup-container {
   max-width: 500px;
   margin: auto;
   .info {
@@ -50,21 +44,16 @@ const handleLogIn = () => {
     flex-direction: column;
     row-gap: 40px;
     margin-top: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
   }
 
-  .forgot-password {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-  }
   .orange-button {
     width: 100%;
     background-color: $orange;
     margin-bottom: 20px;
   }
 
-  .sign-up-msg {
+  .log-in-msg {
     width: 100%;
     display: flex;
     column-gap: 10px;

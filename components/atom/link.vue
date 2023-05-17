@@ -1,5 +1,5 @@
 <template>
-  <a class="link" :href="url">{{ title }}</a>
+  <NuxtLink class="link" :to="url">{{ $t(title) }}</NuxtLink>
 </template>
 
 <script setup lang="ts">

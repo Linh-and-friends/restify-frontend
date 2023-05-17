@@ -1,5 +1,5 @@
 <template>
-  <h1 class="page-title">{{ title }}</h1>
+  <h1 class="page-title">{{ $t(title) }}</h1>
 </template>
 
 <script setup lang="ts">

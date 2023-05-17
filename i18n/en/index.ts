@@ -1,6 +1,11 @@
 const message = {
-  login: 'login',
-  logout: 'logout',
+  welcomeToRestify: 'Welcome to Restify',
+  logIn: 'Login',
+  email: 'Email',
+  password: 'Password',
+  forgotPassword: 'Forgot password?',
+  dontHaveAccount: "Don't have an account?",
+  signUp: 'Sign up'
 };
 
 export default message;
