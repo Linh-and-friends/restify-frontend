@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<NuxtWelcome />
+		<NuxtPage />
 		<a-button @click="handleLogIn">{{ $t('login') }}</a-button>
 		<a-button @click="handleLogOut">{{ $t('logout') }}</a-button>
 	</div>

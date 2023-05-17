@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   modules: [
     // ...
     '@pinia/nuxt',
-    '@pinia-plugin-persistedstate/nuxt'
+    '@pinia-plugin-persistedstate/nuxt',
   ],
   vite: {
     plugins: [
@@ -17,5 +17,15 @@ export default defineNuxtConfig({
     ssr: {
       noExternal: ['moment', 'compute-scroll-into-view', 'ant-design-vue','@ant-design/icons-vue', 'lodash-es', /vue-i18n/]
     },
-  }
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@import "~/assets/styles/_variables.scss";'
+        }
+      }
+    }
+  },
+  css: [
+    '~/assets/styles/main.scss',
+  ]
 });
