@@ -1,5 +1,5 @@
 <template>
-  <a-input class="input" :value="value" :placeholder="placeholder" @input="handleInput"/>
+  <a-input class="input" :value="value" :placeholder="$t(placeholder)" @input="handleInput"/>
 </template>
 <script setup lang="ts">
 

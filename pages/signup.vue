@@ -1,16 +1,16 @@
 <template>
   <div class="signup-container">
-    <AtomPageTitle title="Welcome to Restify"></AtomPageTitle>
-    <AtomSubPageTitle title="Sign Up"></AtomSubPageTitle>
+    <AtomPageTitle title="welcomeToRestify"></AtomPageTitle>
+    <AtomSubPageTitle title="signUp"></AtomSubPageTitle>
     <div class="info">
-      <MoleculeInputSet :value="state.email" title="Email" placeholder="Email" @input="setEmail"></MoleculeInputSet>
-      <MoleculeInputPasswordSet :value="state.password" title="Password" placeholder="Password" @input="setPassword"></MoleculeInputPasswordSet>
-      <MoleculeInputPasswordSet :value="state.confirmedPassword" title="Confirm password" placeholder="Password" @input="setConfirmedPassword"></MoleculeInputPasswordSet>
+      <MoleculeInputSet :value="state.email" title="email" placeholder="email" @input="setEmail"></MoleculeInputSet>
+      <MoleculeInputPasswordSet :value="state.password" title="password" placeholder="password" @input="setPassword"></MoleculeInputPasswordSet>
+      <MoleculeInputPasswordSet :value="state.confirmedPassword" title="confirmPassword" placeholder="password" @input="setConfirmedPassword"></MoleculeInputPasswordSet>
     </div>
-    <AtomConfirmButton class="orange-button" value="Sign up" ></AtomConfirmButton>
+    <AtomConfirmButton class="orange-button" value="signUp" ></AtomConfirmButton>
     <div class="log-in-msg">
       <p>Already have an account?</p>
-      <AtomLink url="/login" title="Log in"></AtomLink>
+      <AtomLink url="/login" title="logIn"></AtomLink>
     </div>
   </div>
 </template>

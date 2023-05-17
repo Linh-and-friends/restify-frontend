@@ -1,5 +1,5 @@
 <template>
-  <a-input-password class="password" :value="value" placeholder="Password" @input="handleInput"/>
+  <a-input-password class="password" :value="value" :placeholder="$t(placeholder)" @input="handleInput"/>
 </template>
 <script setup lang="ts">
 const props = defineProps({
@@ -7,6 +7,11 @@ const props = defineProps({
     type: String,
     required: false,
     default: ''
+  },
+  placeholder: {
+    type: String,
+    required: false,
+    default: 'password'
   }
 })
 

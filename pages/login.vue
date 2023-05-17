@@ -1,18 +1,18 @@
 <template>
   <div class="login-container">
-    <AtomPageTitle title="Welcome to Restify"></AtomPageTitle>
-    <AtomSubPageTitle title="Log In"></AtomSubPageTitle>
+    <AtomPageTitle title="welcomeToRestify"></AtomPageTitle>
+    <AtomSubPageTitle title="logIn"></AtomSubPageTitle>
     <div class="info">
-      <MoleculeInputSet :value="state.email" title="Email" placeholder="Email" @input="setEmail"></MoleculeInputSet>
-      <MoleculeInputPasswordSet :value="state.password" title="Password" placeholder="Password" @input="setPassword"></MoleculeInputPasswordSet>
+      <MoleculeInputSet :value="state.email" title="email" placeholder="email" @input="setEmail"></MoleculeInputSet>
+      <MoleculeInputPasswordSet :value="state.password" title="password" placeholder="password" @input="setPassword"></MoleculeInputPasswordSet>
     </div>
     <div class="forgot-password">
-      <AtomLink url="" title="Forgot password?"></AtomLink>
+      <AtomLink url="" title="forgotPassword"></AtomLink>
     </div>
-    <AtomConfirmButton class="orange-button" value="Log in" @click="handleLogIn"></AtomConfirmButton>
+    <AtomConfirmButton class="orange-button" value="logIn" @click="handleLogIn"></AtomConfirmButton>
     <div class="sign-up-msg">
       <p>Don't have an account?</p>
-      <AtomLink url="" title="Sign up"></AtomLink>
+      <AtomLink url="" title="signUp"></AtomLink>
     </div>
   </div>
 </template>

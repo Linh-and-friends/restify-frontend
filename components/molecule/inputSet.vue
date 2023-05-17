@@ -1,6 +1,6 @@
 <template>
   <div class="input-set-container">
-    <p class="input-title">{{ title }}<span :class="[isRequired ? 'required' : 'optional']">*</span></p>
+    <p class="input-title">{{ $t(title) }}<span :class="[isRequired ? 'required' : 'optional']">*</span></p>
     <AtomInput :value="value" :placeholder="placeholder" @input="handleInput"/>
   </div>
 </template>
