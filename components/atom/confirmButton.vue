@@ -21,5 +21,6 @@ const props = defineProps({
   justify-content: center;
   height: 45px;
   color: $white;
+  cursor: pointer;
 }
 </style>

@@ -7,7 +7,7 @@
       <MoleculeInputPasswordSet :value="state.password" title="password" placeholder="password" @input="setPassword"></MoleculeInputPasswordSet>
       <MoleculeInputPasswordSet :value="state.confirmedPassword" title="confirmPassword" placeholder="password" @input="setConfirmedPassword"></MoleculeInputPasswordSet>
     </div>
-    <AtomConfirmButton class="orange-button" value="signUp" ></AtomConfirmButton>
+    <AtomConfirmButton class="orange-button" value="signUp" @click="handleSignUp"></AtomConfirmButton>
     <div class="log-in-msg">
       <p>Already have an account?</p>
       <AtomLink url="/login" title="logIn"></AtomLink>
@@ -32,6 +32,12 @@ const setPassword = (value: string) => {
 
 const setConfirmedPassword = (value: string) => {
   state.confirmedPassword = value;
+}
+
+import { useUserStore } from '~/stores/user';
+const userStore = useUserStore();
+const handleSignUp = () => {
+  userStore.signUp(state.email, state.password);
 }
 </script>
 

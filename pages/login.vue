@@ -12,7 +12,7 @@
     <AtomConfirmButton class="orange-button" value="logIn" @click="handleLogIn"></AtomConfirmButton>
     <div class="sign-up-msg">
       <p>Don't have an account?</p>
-      <AtomLink url="" title="signUp"></AtomLink>
+      <AtomLink url="/signup" title="signUp"></AtomLink>
     </div>
   </div>
 </template>
@@ -35,8 +35,6 @@ const setPassword = (value: string) => {
 import { useUserStore } from '~/stores/user';
 const userStore = useUserStore();
 const handleLogIn = () => {
-  console.log("email", state.email);
-  console.log("password", state.password);
   userStore.logIn(state.email, state.password);
 }
 </script>
